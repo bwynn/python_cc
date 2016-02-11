@@ -43,4 +43,11 @@
 # favorite_language = " python"
 # print(favorite_language.lstrip())
 
-# favorite_language.strip() will remove any additional whitespaces 
+# favorite_language.strip() will remove any additional whitespaces
+
+################################################################################
+# A note on integers
+# print(3/2) returns 1
+# print(3.0/2) returns 1.5
+# print(3/2.0) returns 1.5
+# etc etc
