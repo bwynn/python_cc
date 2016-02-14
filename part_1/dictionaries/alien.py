@@ -30,5 +30,54 @@
 
 ################################################################################
 # a more complex implementation
-alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
-print("Original x-position: " + str(alien_0['x_position']))
+# alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+# print("Original x-position: " + str(alien_0['x_position']))
+
+# move the alien to the right
+# if alien_0['speed'] == 'slow':
+#    x_increment = 1
+# elif alien_0['speed'] == 'medium':
+#    x_increment = 2
+# else:
+    # this must be a fast alien
+#    x_increment = 3
+
+# the new position is the old position plus the increment
+# alien_0['x_position'] = alien_0['x_position'] + x_increment
+
+# print("New x-position: " + str(alien_0['x_position']))
+
+################################################################################
+# Listing nested dictionaries
+# alien_0 = {'color': 'green', 'points': 5}
+# alien_1 = {'color': 'yellow', 'points': 10}
+# alien_2 = {'color': 'red', 'points': 15}
+
+# aliens = [alien_0, alien_1, alien_2]
+
+# for alien in aliens:
+#    print(alien)
+
+################################################################################
+# A more realistic implementation
+aliens = []
+
+# make 30 green aliens
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+# set the first 3 to new values 
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+# show the first 5 aliens:
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# show how many aliens have been created
+print("Total number of aliens: " + str(len(aliens)))
