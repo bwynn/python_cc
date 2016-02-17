@@ -1,3 +1,5 @@
+# Working with modulo operator
+# ref: % symbol,
 number = raw_input("Enter a number, and I'll tell you if it's even or odd: ")
 number = int(number)
 
