@@ -1,9 +1,9 @@
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python'
-}
+# favorite_languages = {
+#    'jen': 'python',
+#    'sarah': 'c',
+#    'edward': 'ruby',
+#    'phil': 'python'
+# }
 
 # print("Sarah's favorite language is " + favorite_languages['sarah'].title() + ".")
 
@@ -31,10 +31,24 @@ favorite_languages = {
 
 ################################################################################
 # looping through the values
-print("The following languages have been mentioned:")
+# print("The following languages have been mentioned:")
 # for language in favorite_languages.values():
 #    print(language.title())
 
 # use a set() to remove any repetitions in values
-for language in set(favorite_languages.values()):
-    print(language.title())
+# for language in set(favorite_languages.values()):
+#    print(language.title())
+
+################################################################################
+# Multiple values in a dictionary
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell']
+}
+
+for name, languages in favorite_languages.items():
+    print("\n" + name.title() + "'s favorite languages are:")
+    for language in languages:
+        print("\t" + language.title())
