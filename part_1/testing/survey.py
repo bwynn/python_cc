@@ -1,5 +1,4 @@
-class AnonymousSurvey(object):
-
+class AnonymousSurvey():
     def __init__(self, question):
         # store a question, prepare to store responses
         self.question = question
@@ -7,7 +6,7 @@ class AnonymousSurvey(object):
 
     def show_question(self):
         # show the survey question
-        print(question)
+        print(self.question)
 
     def store_response(self, new_response):
         # store a single response to the survey
@@ -16,5 +15,5 @@ class AnonymousSurvey(object):
     def show_results(self):
         # Show all the responses that have been given
         print("Survey results:")
-        for response in responses:
+        for response in self.responses:
             print('- ' + response)
