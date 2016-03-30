@@ -125,7 +125,7 @@ def change_fleet_direction(ai_settings, aliens):
 
 def ship_hit(ai_settings, stats, screen, ship, aliens, bullets):
     # responsd to ship being hit by alien
-    if stats.ships_left > 0:
+    if stats.shipsq_left > 0:
         # decrement ships_left
         stats.ships_left -= 1
 
